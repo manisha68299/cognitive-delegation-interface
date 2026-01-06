@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cognitive Delegation Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Cognitive Delegation Interface</h1>
+  <p class="subtitle">AI that decides — with your permission</p>
+
+  <textarea id="input" placeholder="Paste ingredient list here..."></textarea>
+
+  <button onclick="analyze()">Analyze Ingredients</button>
+
+  <div id="decisionBox" class="hidden">
+    <p class="question">Should I decide this as if I were you?</p>
+    <button onclick="delegate(true)">Yes, decide for me</button>
+    <button onclick="delegate(false)">No, I’ll decide</button>
+  </div>
+
+  <div id="result" class="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
